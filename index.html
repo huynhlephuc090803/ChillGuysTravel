@@ -187,7 +187,7 @@
 <section id="tour">
   <h2>Featured Tour</h2>
   <div class="tour-card">
-    <img src="https://nads.1cdn.vn/2025/01/10/W_ban-chieu7.jpg " alt="Da Nang - Hoi An Tour">
+    <img src="https://picsum.photos/id/1040/600/400" alt="Da Nang - Hoi An Tour">
     <h3>Da Nang - Hoi An 6D5N</h3>
     <p>
       6 days 5 nights tour, starting from Tan Son Nhat Airport to Da Nang Airport. 
@@ -196,23 +196,36 @@
     </p>
     <p><strong>Price:</strong> $2500</p>
 
-    <!-- Button to show details -->
-    <button class="details-btn" onclick="toggleDetails()">View Itinerary</button>
-
-    <!-- Hidden itinerary -->
-    <div id="tour-details" class="tour-details">
-      <h4>Itinerary</h4>
-      <ul>
-        <li><strong>Day 1:</strong> Arrival at Da Nang Airport, transfer to hotel, evening at Ba Na Hills.</li>
-        <li><strong>Day 2:</strong> Visit Golden Bridge & Fantasy Park at Ba Na Hills.</li>
-        <li><strong>Day 3:</strong> Relax at My Khe Beach, seafood dinner by the sea.</li>
-        <li><strong>Day 4:</strong> Explore Marble Mountains, transfer to Hoi An Ancient Town.</li>
-        <li><strong>Day 5:</strong> Boat trip to Cham Island, snorkeling & local culture.</li>
-        <li><strong>Day 6:</strong> Free time in Hoi An, departure to Da Nang Airport.</li>
-      </ul>
-    </div>
+    <!-- Button to open popup -->
+    <button class="details-btn" onclick="openPopup()">View Itinerary</button>
   </div>
 </section>
+
+<!-- Popup -->
+<div id="tourPopup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h2>Itinerary: Da Nang - Hoi An 6D5N</h2>
+    <ul>
+      <li><strong>Day 1:</strong> Arrival at Da Nang, transfer to hotel. Evening visit to <b>Ba Na Hills</b>.<br>
+        <img src="https://picsum.photos/id/1015/600/350" alt="Ba Na Hills">
+      </li>
+      <li><strong>Day 2:</strong> Relax at <b>My Khe Beach</b>, enjoy seafood dinner by the sea.<br>
+        <img src="https://picsum.photos/id/1016/600/350" alt="My Khe Beach">
+      </li>
+      <li><strong>Day 3:</strong> Explore the <b>Marble Mountains</b> and surrounding caves.<br>
+        <img src="https://picsum.photos/id/1020/600/350" alt="Marble Mountains">
+      </li>
+      <li><strong>Day 4:</strong> Discover <b>Hoi An Ancient City</b>, walking tour and lantern night market.<br>
+        <img src="https://picsum.photos/id/1027/600/350" alt="Hoi An Ancient City">
+      </li>
+      <li><strong>Day 5:</strong> Boat trip to <b>Cham Island</b>, snorkeling & cultural experience.<br>
+        <img src="https://picsum.photos/id/1024/600/350" alt="Cham Island">
+      </li>
+      <li><strong>Day 6:</strong> Free time in Hoi An, transfer to Da Nang Airport for departure.</li>
+    </ul>
+  </div>
+</div>
 
 <style>
   .details-btn {
@@ -228,29 +241,70 @@
   .details-btn:hover {
     background: #01579b;
   }
-  .tour-details {
+
+  /* Popup */
+  .popup {
     display: none;
-    padding: 15px;
-    background: #f9f9f9;
-    border-top: 1px solid #ccc;
-    margin: 10px;
-    border-radius: 5px;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.7);
   }
-  .tour-details ul {
-    padding-left: 20px;
+  .popup-content {
+    background: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    animation: fadeIn 0.5s;
+  }
+  .popup-content h2 {
+    color: #0288d1;
+  }
+  .popup-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  .popup-content li {
+    margin-bottom: 20px;
+  }
+  .popup-content img {
+    margin-top: 10px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+  }
+  .close-btn {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+  .close-btn:hover {
+    color: red;
+  }
+  @keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.95);}
+    to {opacity: 1; transform: scale(1);}
   }
 </style>
 
 <script>
-  function toggleDetails() {
-    const details = document.getElementById("tour-details");
-    if (details.style.display === "block") {
-      details.style.display = "none";
-    } else {
-      details.style.display = "block";
-    }
+  function openPopup() {
+    document.getElementById("tourPopup").style.display = "block";
+  }
+  function closePopup() {
+    document.getElementById("tourPopup").style.display = "none";
   }
 </script>
+
 
 
   <!-- Pricing -->
@@ -300,5 +354,6 @@
   </script>
 </body>
 </html>
+
 
 
