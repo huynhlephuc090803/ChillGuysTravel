@@ -10,374 +10,241 @@
     margin: 0;
     padding: 0;
     line-height: 1.6;
-
     background: url("https://bqn.1cdn.vn/2024/07/25/441-202407251543501.png") no-repeat center center fixed;
     background-size: cover;
-
-    color: #fff; /*
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-  }
-   
-    html {
-  scroll-behavior: smooth;
-}
-    header {
-      background: #0288d1;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #01579b;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Banner Slideshow */
-    .banner {
-      position: relative;
-      height: 400px;
-      overflow: hidden;
-    }
-    .banner img {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity 1.5s ease-in-out;
-    }
-    .banner img.active {
-      opacity: 1;
-    }
-    .banner-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      text-shadow: 2px 2px 5px black;
-      text-align: center;
-      z-index: 2;
-    }
-    .banner-text h1 {
-      font-size: 48px;
-      margin: 0;
-    }
-    .banner-text p {
-      font-size: 22px;
-      margin-top: 10px;
-    }
-
-    section {
-      padding: 40px;
-    }
-    h2 {
-      color: #0288d1;
-      margin-bottom: 20px;
-    }
-
-    /* Tour card */
-    .tour-card {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      width: 320px;
-      margin: auto;
-      overflow: hidden;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
-    }
-    .tour-card:hover {
-      transform: scale(1.03);
-    }
-    .tour-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .tour-card h3 {
-      margin: 10px;
-      color: #0288d1;
-    }
-    .tour-card p {
-      margin: 10px;
-    }
-
-    /* Pricing */
-    .pricing {
-      background: #f4f4f4;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    /* Contact form */
-    .contact-form {
-      max-width: 500px;
-      margin: auto;
-    }
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .contact-form button {
-      background: #0288d1;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .contact-form button:hover {
-      background: #01579b;
-    }
-
-    footer {
-      background: #01579b;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 20px;
-    }
+    color: #fff;
+   }
+   html {
+    scroll-behavior: smooth;
+   }
+   header {
+    background: rgba(2,136,209,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+   }
+   header img.logo {
+    height: 60px;
+    margin-right: 15px;
+   }
+   header h1 {
+    margin: 0;
+    font-size: 28px;
+   }
+   header p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+   }
+   nav {
+    background: rgba(1,87,155,0.9);
+    padding: 10px;
+    text-align: center;
+   }
+   nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+   }
+   nav a:hover {
+    text-decoration: underline;
+   }
+   .banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+   }
+   .banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+   }
+   .banner img.active {
+    opacity: 1;
+   }
+   .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    z-index: 2;
+   }
+   .banner-text h1 {
+    font-size: 48px;
+    margin: 0;
+   }
+   .banner-text p {
+    font-size: 22px;
+    margin-top: 10px;
+   }
+   section {
+    padding: 40px;
+   }
+   h2 {
+    color: #ffeb3b;
+    margin-bottom: 20px;
+    text-align: center;
+   }
+   .tour-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 320px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    background: rgba(0,0,0,0.5);
+   }
+   .tour-card:hover {
+    transform: scale(1.03);
+   }
+   .tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+   }
+   .tour-card h3 {
+    margin: 10px;
+    color: #ffeb3b;
+   }
+   .tour-card p {
+    margin: 10px;
+   }
+   .pricing {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+   }
+   .pricing strong {
+    color: #ffeb3b;
+   }
+   .contact-form {
+    max-width: 500px;
+    margin: auto;
+   }
+   .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+   }
+   .contact-form button {
+    background: #0288d1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+   }
+   .contact-form button:hover {
+    background: #01579b;
+   }
+   footer {
+    background: rgba(1,87,155,0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+   }
   </style>
 </head>
 <body>
 <header>
-  <div class="header-container">
-    <!-- Logo -->
-    <img src="file:///C:/Users/pc/Downloads/z7021073060630_f8637963b166b2e79f3ddf543ac97036-removebg-preview.png" alt="ChillGuysTravel Logo" class="logo">
-    
-    <!-- Text -->
-    <div class="header-text">
-      <h1>ChillGuysTravel Company</h1>
-      <p>Explore Vietnam</p>
-    </div>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="ChillGuysTravel Logo" class="logo">
+  <div>
+    <h1>ChillGuysTravel Company</h1>
+    <p>Explore Vietnam</p>
   </div>
 </header>
 
-  <nav>
-    <a href="#about">About Us</a>
-    <a href="#tour">Tour</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+  <a href="#about">About Us</a>
+  <a href="#tour">Tour</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <!-- Slideshow Banner -->
-  <div class="banner">
-    <img src="https://hanoitourist.vn/sites/default/files/2025/08/BN1-1744276317-5431-1744598185.jpg" class="active" alt="Vietnam Travel 1">
-    <img src="https://vcdn1-dulich.vnecdn.net/2022/04/01/hoianvnexpress-1648804029-1648-5294-6994-1648804826.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=mKJvGKo8GmLz4tYaUC4L5g" alt="Vietnam Travel 2">
-    <img src="https://drt.danang.vn/content/images/2024/06/cu-lao-cham-o-dau-1.jpg" alt="Vietnam Travel 3">
-    <div class="banner-text">
-      <h1>Explore Vietnam</h1>
-      <p>Your journey, our passion</p>
-    </div>
-  </div>
-
-  <!-- About -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      ChillGuysTravel was established nearly a year ago and specializes in creating unique and memorable travel experiences. 
-      With a young, enthusiastic and experienced team, we always accompany you on every journey. 
-      Our strengths lie in flexible tour designs, reasonable prices and dedicated customer service. 
-      ChillGuysTravel is committed to providing the highest standards of safety, comfort and quality. 
-      Your satisfaction and happiness are our greatest success.
-    </p>
-  </section>
-
-  <!-- Tour -->
-<section id="tour">
-  <h2>Featured Tour</h2>
-  <div class="tour-card">
-    <img src="https://picsum.photos/id/1040/600/400" alt="Da Nang - Hoi An Tour">
-    <h3>Da Nang - Hoi An 6D5N</h3>
-    <p>
-      6 days 5 nights tour, starting from Tan Son Nhat Airport to Da Nang Airport. 
-      The journey begins at Ba Na Hills, followed by My Khe Beach, Marble Mountains, 
-      then exploring Hoi An and Cham Island.
-    </p>
-    <p><strong>Price:</strong> $2500</p>
-
-    <!-- Button to open popup -->
-    <button class="details-btn" onclick="openPopup()">View Itinerary</button>
-  </div>
-</section>
-
-<!-- Popup -->
-<div id="tourPopup" class="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closePopup()">&times;</span>
-    <h2>Itinerary: Da Nang - Hoi An 6D5N</h2>
-    <ul>
-      <li><strong>Day 1:</strong> Arrival at Da Nang, transfer to hotel. Evening visit to <b>Ba Na Hills</b>.<br>
-        <img src="https://picsum.photos/id/1015/600/350" alt="Ba Na Hills">
-      </li>
-      <li><strong>Day 2:</strong> Relax at <b>My Khe Beach</b>, enjoy seafood dinner by the sea.<br>
-        <img src="https://picsum.photos/id/1016/600/350" alt="My Khe Beach">
-      </li>
-      <li><strong>Day 3:</strong> Explore the <b>Marble Mountains</b> and surrounding caves.<br>
-        <img src="https://picsum.photos/id/1020/600/350" alt="Marble Mountains">
-      </li>
-      <li><strong>Day 4:</strong> Discover <b>Hoi An Ancient City</b>, walking tour and lantern night market.<br>
-        <img src="https://picsum.photos/id/1027/600/350" alt="Hoi An Ancient City">
-      </li>
-      <li><strong>Day 5:</strong> Boat trip to <b>Cham Island</b>, snorkeling & cultural experience.<br>
-        <img src="https://picsum.photos/id/1024/600/350" alt="Cham Island">
-      </li>
-      <li><strong>Day 6:</strong> Free time in Hoi An, transfer to Da Nang Airport for departure.</li>
-    </ul>
+<div class="banner">
+  <img src="https://ik.imagekit.io/tvlk/blog/2023/02/Ba-Na-Hills-1.jpg" class="active">
+  <img src="https://statics.vinpearl.com/kinh-nghiem-du-lich-bien-my-khe-1_1686478966.jpg">
+  <img src="https://danangfantasticity.com/wp-content/uploads/2015/08/ngu-hanh-son-da-nang.jpg">
+  <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/8/11/1222457/Hoian.jpg">
+  <img src="https://statics.vinpearl.com/du-lich-cu-lao-cham_1688722206.jpg">
+  <div class="banner-text">
+    <h1>Welcome to ChillGuysTravel</h1>
+    <p>Explore Vietnam with Us</p>
   </div>
 </div>
 
-<style>
-  .details-btn {
-    background: #0288d1;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
-    transition: background 0.3s;
-  }
-  .details-btn:hover {
-    background: #01579b;
-  }
+<section id="about">
+  <h2>About Us</h2>
+  <p>ChillGuysTravel was established nearly a year ago and specializes in creating unique and memorable travel experiences. With a young, enthusiastic and experienced team, we always accompany you on every journey. Our strengths lie in flexible tour designs, reasonable prices and dedicated customer service. ChillGuysTravel is committed to providing the highest standards of safety, comfort and quality. Your satisfaction and happiness are our greatest success.</p>
+</section>
 
-  /* Popup */
-  .popup {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background: rgba(0,0,0,0.7);
-  }
-  .popup-content {
-    background: #fff;
-    margin: 5% auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 800px;
-    animation: fadeIn 0.5s;
-  }
-  .popup-content h2 {
-    color: #0288d1;
-  }
-  .popup-content ul {
-    list-style: none;
-    padding: 0;
-  }
-  .popup-content li {
-    margin-bottom: 20px;
-  }
-  .popup-content img {
-    margin-top: 10px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 600px;
-    display: block;
-  }
-  .close-btn {
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #333;
-  }
-  .close-btn:hover {
-    color: red;
-  }
-  @keyframes fadeIn {
-    from {opacity: 0; transform: scale(0.95);}
-    to {opacity: 1; transform: scale(1);}
-  }
-</style>
+<section id="tour">
+  <h2>Featured Tour</h2>
+  <div class="tour-card">
+    <img src="https://ik.imagekit.io/tvlk/blog/2023/02/Ba-Na-Hills-1.jpg" alt="Da Nang - Hoi An">
+    <h3>Da Nang - Hoi An 6D5N</h3>
+    <p>Tour 6 days 5 nights, from Tan Son Nhat Airport to Da Nang Airport. The journey includes Ba Na Hills, My Khe Beach, Marble Mountains, Hoi An, and Cham Island.</p>
+    <p><strong>Price:</strong> $2500</p>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Pricing</h2>
+  <div class="pricing">
+    <p><strong>Standard Price:</strong> $2500 per person</p>
+    <p><strong>Discount:</strong> 30% off for groups of 10 people</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Address:</strong> 06 Tran Van On Street, Phu Loi Ward, Ho Chi Minh City</p>
+  <p><strong>Phone:</strong> 09646675561</p>
+  <p><strong>Email:</strong> chillguystravelcompany@gmail.com</p>
+  <p><strong>Facebook:</strong> <a href="https://www.facebook.com/dhtdm2009" target="_blank" style="color:#ffeb3b;">Visit our page</a></p>
+
+  <div class="contact-form">
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email">
+    <input type="tel" placeholder="Phone Number">
+    <textarea rows="4" placeholder="Notes (optional)"></textarea>
+    <button>Submit</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Chill Guys Travel. All rights reserved.</p>
+</footer>
 
 <script>
-  function openPopup() {
-    document.getElementById("tourPopup").style.display = "block";
-  }
-  function closePopup() {
-    document.getElementById("tourPopup").style.display = "none";
-  }
+  let banners = document.querySelectorAll('.banner img');
+  let index = 0;
+  setInterval(() => {
+    banners[index].classList.remove('active');
+    index = (index + 1) % banners.length;
+    banners[index].classList.add('active');
+  }, 4000);
 </script>
-
-
-
-  <!-- Pricing -->
-  <section id="pricing">
-    <h2>Pricing</h2>
-    <div class="pricing">
-      <p><strong>Standard Price:</strong> $2500 per person</p>
-      <p><strong>Discount:</strong> 30% off for groups of 10 people</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Address:</strong> 06 Tran Van On Street, Phu Loi Ward, Ho Chi Minh City</p>
-    <p><strong>Phone:</strong> 09646675561</p>
-    <p><strong>Email:</strong> chillguystravelcompany@gmail.com</p>
-    <p><strong>Facebook:</strong> <a href="https://www.facebook.com/dhtdm2009" target="_blank">ChillGuysTravel</a></p>
-
-    <form class="contact-form">
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <textarea rows="5" placeholder="Notes (optional)"></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>© 2025 Chill Guys Travel. All rights reserved.</p>
-  </footer>
-
-  <!-- Slideshow Script -->
-  <script>
-    let slides = document.querySelectorAll('.banner img');
-    let index = 0;
-
-    function showSlide() {
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-      });
-      slides[index].classList.add('active');
-      index = (index + 1) % slides.length;
-    }
-
-    setInterval(showSlide, 4000); // đổi ảnh sau 4 giây
-  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
