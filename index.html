@@ -262,28 +262,90 @@
 <div id="tourPopup" class="popup">
   <div class="popup-content">
     <span class="close-btn" onclick="closePopup()">&times;</span>
-    <h2>Itinerary: Da Nang - Hoi An 6D5N</h2>
+    <h2>Main Highlights of the Tour</h2>
     <ul>
-      <li><strong>Day 1:</strong> Arrival at Da Nang, transfer to hotel. Evening visit to <b>Ba Na Hills</b>.<br>
+      <li><b>Ba Na Hills</b> – Cable car & Golden Bridge.<br>
         <img src="https://static.vinwonders.com/production/ba-na-hills-01.jpg" alt="Ba Na Hills">
       </li>
-      <li><strong>Day 2:</strong> Relax at <b>My Khe Beach</b>, enjoy seafood dinner by the sea.<br>
+      <li><b>My Khe Beach</b> – Relax & enjoy fresh seafood.<br>
         <img src="https://ik.imagekit.io/tvlk/blog/2023/05/bai-bien-my-khe-2.jpg" alt="My Khe Beach">
       </li>
-      <li><strong>Day 3:</strong> Explore the <b>Marble Mountains</b> and surrounding caves.<br>
+      <li><b>Marble Mountains</b> – Pagodas & caves exploration.<br>
         <img src="https://danangfantasticity.com/wp-content/uploads/2020/07/Marble-Mountains-01.jpg" alt="Marble Mountains">
       </li>
-      <li><strong>Day 4:</strong> Discover <b>Hoi An Ancient City</b>, walking tour and lantern night market.<br>
+      <li><b>Hoi An Ancient Town</b> – Lanterns & night market.<br>
         <img src="https://ik.imagekit.io/tvlk/blog/2023/06/pho-co-hoi-an-cover.jpeg" alt="Hoi An Ancient City">
       </li>
-      <li><strong>Day 5:</strong> Boat trip to <b>Cham Island</b>, snorkeling & cultural experience.<br>
+      <li><b>Cham Island</b> – Snorkeling & cultural experience.<br>
         <img src="https://statics.vinpearl.com/cu-lao-cham-hoi-an-1.jpg" alt="Cham Island">
       </li>
-      <li><strong>Day 6:</strong> Free time in Hoi An, transfer to Da Nang Airport for departure.</li>
     </ul>
   </div>
 </div>
 
+<style>
+  .details-btn {
+    background: #0288d1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s;
+  }
+  .details-btn:hover { background: #01579b; }
+
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.7);
+  }
+  .popup-content {
+    background: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; max-width: 800px;
+    animation: fadeIn 0.5s;
+  }
+  .popup-content h2 { color: #0288d1; text-align: center; }
+  .popup-content ul { list-style: none; padding: 0; }
+  .popup-content li { margin-bottom: 20px; }
+  .popup-content img {
+    margin-top: 10px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+  }
+  .close-btn {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+  .close-btn:hover { color: red; }
+  @keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.95);}
+    to {opacity: 1; transform: scale(1);}
+  }
+</style>
+
+<script>
+  function openPopup() {
+    document.getElementById("tourPopup").style.display = "block";
+  }
+  function closePopup() {
+    document.getElementById("tourPopup").style.display = "none";
+  }
+</script>
+  
 <section id="pricing">
   <h2>Pricing</h2>
   <div class="pricing">
@@ -330,3 +392,4 @@
 </script>
 </body>
 </html>
+
