@@ -203,6 +203,53 @@
       from {opacity: 0; transform: scale(0.95);}
       to {opacity: 1; transform: scale(1);}
     }
+    #feedback {
+  padding: 40px;
+  text-align: center;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feedback-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.feedback-card:hover {
+  transform: scale(1.05);
+}
+
+.feedback-card p {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.feedback-card h4 {
+  margin-top: 15px;
+  color: #ffeb3b;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+}
+
   </style>
 </head>
 <body>
@@ -370,6 +417,31 @@
     <button type="submit">Submit</button>
   </form>
 </section>
+<section id="feedback">
+  <h2>Customer Feedback</h2>
+  <div class="feedback-container">
+    <div class="feedback-card">
+      <img src="images/avatar1.jpg" alt="Michael Brown" class="avatar">
+      <p>"Absolutely amazing trip! Vietnam is stunning and ChillGuysTravel made everything so smooth and enjoyable."</p>
+      <h4>- Michael Brown, UK</h4>
+    </div>
+    <div class="feedback-card">
+      <img src="images/avatar2.jpg" alt="Anna Müller" class="avatar">
+      <p>"I loved every moment of the journey. The guides were professional and the itinerary was perfectly balanced."</p>
+      <h4>- Anna Müller, Germany</h4>
+    </div>
+    <div class="feedback-card">
+      <img src="images/avatar3.jpg" alt="Sofia Rossi" class="avatar">
+      <p>"The cultural experiences in Hoi An were unforgettable. Thank you for such a well-organized tour!"</p>
+      <h4>- Sofia Rossi, Italy</h4>
+    </div>
+    <div class="feedback-card">
+      <img src="images/avatar4.jpg" alt="David Wilson" class="avatar">
+      <p>"This trip exceeded all my expectations. The beaches, the food, the people – simply fantastic!"</p>
+      <h4>- David Wilson, Canada</h4>
+    </div>
+  </div>
+</section>
 
 <footer>
   <p>© 2025 Chill Guys Travel. All rights reserved.</p>
@@ -394,6 +466,7 @@
 </script>
 </body>
 </html>
+
 
 
 
