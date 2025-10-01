@@ -184,19 +184,74 @@
   </section>
 
   <!-- Tour -->
-  <section id="tour">
-    <h2>Featured Tour</h2>
-    <div class="tour-card">
-      <img src="https://picsum.photos/id/1040/600/400" alt="Da Nang - Hoi An Tour">
-      <h3>Da Nang - Hoi An 6D5N</h3>
-      <p>
-        6 days 5 nights tour, starting from Tan Son Nhat Airport to Da Nang Airport. 
-        The journey begins at Ba Na Hills, followed by My Khe Beach, Marble Mountains, 
-        then exploring Hoi An and Cham Island.
-      </p>
-      <p><strong>Price:</strong> $2500</p>
+<section id="tour">
+  <h2>Featured Tour</h2>
+  <div class="tour-card">
+    <img src="https://picsum.photos/id/1040/600/400" alt="Da Nang - Hoi An Tour">
+    <h3>Da Nang - Hoi An 6D5N</h3>
+    <p>
+      6 days 5 nights tour, starting from Tan Son Nhat Airport to Da Nang Airport. 
+      The journey begins at Ba Na Hills, followed by My Khe Beach, Marble Mountains, 
+      then exploring Hoi An and Cham Island.
+    </p>
+    <p><strong>Price:</strong> $2500</p>
+
+    <!-- Button to show details -->
+    <button class="details-btn" onclick="toggleDetails()">View Itinerary</button>
+
+    <!-- Hidden itinerary -->
+    <div id="tour-details" class="tour-details">
+      <h4>Itinerary</h4>
+      <ul>
+        <li><strong>Day 1:</strong> Arrival at Da Nang Airport, transfer to hotel, evening at Ba Na Hills.</li>
+        <li><strong>Day 2:</strong> Visit Golden Bridge & Fantasy Park at Ba Na Hills.</li>
+        <li><strong>Day 3:</strong> Relax at My Khe Beach, seafood dinner by the sea.</li>
+        <li><strong>Day 4:</strong> Explore Marble Mountains, transfer to Hoi An Ancient Town.</li>
+        <li><strong>Day 5:</strong> Boat trip to Cham Island, snorkeling & local culture.</li>
+        <li><strong>Day 6:</strong> Free time in Hoi An, departure to Da Nang Airport.</li>
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
+
+<style>
+  .details-btn {
+    background: #0288d1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s;
+  }
+  .details-btn:hover {
+    background: #01579b;
+  }
+  .tour-details {
+    display: none;
+    padding: 15px;
+    background: #f9f9f9;
+    border-top: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  .tour-details ul {
+    padding-left: 20px;
+  }
+</style>
+
+<script>
+  function toggleDetails() {
+    const details = document.getElementById("tour-details");
+    if (details.style.display === "block") {
+      details.style.display = "none";
+    } else {
+      details.style.display = "block";
+    }
+  }
+</script>
+
 
   <!-- Pricing -->
   <section id="pricing">
@@ -245,3 +300,4 @@
   </script>
 </body>
 </html>
+
