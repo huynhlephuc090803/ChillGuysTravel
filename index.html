@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Công ty Du Lịch Hành Trình Việt</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #009688;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #00695c;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* --- Banner slideshow --- */
+    .banner {
+      position: relative;
+      height: 400px;
+      overflow: hidden;
+    }
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0; left: 0;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px black;
+    }
+    .slide.active {
+      opacity: 1;
+    }
+
+    /* --- Section --- */
+    section {
+      padding: 40px;
+    }
+
+    /* --- Tour cards --- */
+    .tours {
+      display: flex;
+      gap: 20px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .tour-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 300px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .tour-card:hover {
+      transform: scale(1.05);
+    }
+    .tour-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+    .tour-card:hover img {
+      transform: scale(1.1);
+    }
+    .tour-card h3 {
+      margin: 10px;
+      color: #009688;
+    }
+    .tour-card p {
+      margin: 10px;
+    }
+
+    /* --- Form --- */
+    .contact-form {
+      max-width: 500px;
+      margin: auto;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background: #009688;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background: #00796b;
+    }
+
+    footer {
+      background: #00695c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Công ty Du Lịch Hành Trình Việt</h1>
+    <p>Khám phá thế giới cùng chúng tôi!</p>
+  </header>
+
+  <nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#tour">Tour</a>
+    <a href="#gia">Bảng giá</a>
+    <a href="#lienhe">Liên hệ</a>
+  </nav>
+
+  <!-- Banner Slideshow -->
+  <div class="banner">
+    <div class="slide active" style="background-image: url('https://picsum.photos/id/1018/1200/400');">
+      Hành Trình Mơ Ước
+    </div>
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1025/1200/400');">
+      Trải Nghiệm Độc Đáo
+    </div>
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1036/1200/400');">
+      Du Lịch Khắp Nơi
+    </div>
+  </div>
+
+  <section id="gioithieu">
+    <h2>Về chúng tôi</h2>
+    <p>Công ty Du Lịch Hành Trình Việt mang đến những chuyến đi tuyệt vời, trải nghiệm độc đáo và dịch vụ chuyên nghiệp. Chúng tôi luôn đặt sự hài lòng của khách hàng lên hàng đầu.</p>
+  </section>
+
+  <section id="tour">
+    <h2>Tour nổi bật</h2>
+    <div class="tours">
+      <div class="tour-card">
+        <img src="https://picsum.photos/300/200?beach" alt="Tour biển">
+        <h3>Tour Biển Nha Trang</h3>
+        <p>Khám phá bãi biển đẹp nhất Việt Nam, tận hưởng nắng vàng và cát trắng.</p>
+      </div>
+      <div class="tour-card">
+        <img src="https://picsum.photos/300/200?mountain" alt="Tour núi">
+        <h3>Tour Núi Fansipan</h3>
+        <p>Chinh phục nóc nhà Đông Dương với trải nghiệm cáp treo tuyệt vời.</p>
+      </div>
+      <div class="tour-card">
+        <img src="https://picsum.photos/300/200?city" alt="Tour thành phố">
+        <h3>Tour Hà Nội - Hạ Long</h3>
+        <p>Khám phá thủ đô ngàn năm văn hiến và vịnh Hạ Long kỳ quan thế giới.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gia">
+    <h2>Bảng giá tham khảo</h2>
+    <ul>
+      <li>Tour Biển Nha Trang: 4.000.000 VNĐ</li>
+      <li>Tour Núi Fansipan: 3.500.000 VNĐ</li>
+      <li>Tour Hà Nội - Hạ Long: 5.000.000 VNĐ</li>
+    </ul>
+  </section>
+
+  <section id="lienhe">
+    <h2>Liên hệ với chúng tôi</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Họ và tên" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Nội dung liên hệ"></textarea>
+      <button type="submit">Gửi</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Công ty Du Lịch Hành Trình Việt. All rights reserved.</p>
+  </footer>
+
+  <!-- Script slideshow -->
+  <script>
+    let slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    function showSlide() {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) slide.classList.add('active');
+      });
+      index = (index + 1) % slides.length;
+    }
+
+    setInterval(showSlide, 4000); // đổi ảnh sau 4 giây
+  </script>
+</body>
+</html>
